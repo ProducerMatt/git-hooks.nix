@@ -66,7 +66,7 @@ in
     };
 
     entry = mkOption {
-      type = types.str;
+      type = types.uniq types.str;
       description = lib.mdDoc
         ''
           The entry point - the executable to run. {option}`entry` can also contain arguments that will not be overridden, such as `entry = "autopep8 -i";`.
